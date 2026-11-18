@@ -4,7 +4,7 @@
 нову лабу отримуєте через **Git → Pull**. У Google Classroom до кожної лаби — лише документи (інструкція, пакет вхідних даних,
 шаблон звіту, рубрика) і посилання сюди. Усі лаби виконуються **кодом** в IDEA; браузер потрібен лише один раз — створити API-ключ.
 
-Адреса репозиторію: **https://github.com/<ваш-акаунт>/prompt-lab**
+Адреса репозиторію: **https://github.com/eugeneol/promptengineering-lab**
 
 ## 1. Як отримати проєкт (перший раз)
 
@@ -19,7 +19,7 @@
 **Спосіб Б — командний рядок:**
 
 ```
-git clone https://github.com/<ваш-акаунт>/prompt-lab.git
+git clone https://github.com/eugeneol/promptengineering-lab.git
 ```
 
 потім у IDEA `File → Open…` → `pom.xml` → **Open as Project**.
