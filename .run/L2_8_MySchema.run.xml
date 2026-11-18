@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Лаба 2 · 8 My schema" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ua.knu.promptlab.lab2.MySchemaRun" />
+    <module name="prompt-lab" />
+    <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Лаба 1 · 4 Tokens UA vs EN" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ua.knu.promptlab.steps.Step4TokensUaVsEn" />
+    <module name="prompt-lab" />
+    <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

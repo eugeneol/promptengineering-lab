@@ -1,0 +1,143 @@
+{
+ "source": "Електронний фонд локальних нормативно-правових документів КНУ ім. В. Стефаника (efund.cnu.edu.ua)",
+ "checked": "2026-11-12",
+ "note": "Тексти положень належать університету й використовуються лише для навчання; у проєкт вони не входять — код завантажує PDF за посиланнями.",
+ "documents": [
+  {
+   "id": "osv_proces",
+   "title": "Положення про організацію освітнього процесу та розробку основних документів з організації освітнього процесу",
+   "code": "02-07.45:2026, ред. 11",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/09/polozhennia-pro-orhanizatsiiu-osvitnoho-protsesu-ta-rozrobku-osnovnykh-dokumentiv-z-orhanizatsii-osvitnoho-protsesu.pdf",
+   "pages": 77,
+   "sha256": "a8564656d550d17567c33aac6aa139aaafb62ad92116c2439ab1be8316f0e3e0"
+  },
+  {
+   "id": "povtorne",
+   "title": "Положення про порядок повторного вивчення навчальних дисциплін (кредитів ECTS) в умовах ECTS",
+   "code": "ПЛ.03.3.1-05:2026, ред. 7",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/09/polozhennia-pro-povtorne-vyvchennia-dystsyplin-kredytiv-ects-v-umovakh-ects.pdf",
+   "pages": 11,
+   "sha256": "aa940e17ae85cb624591086b1aa0cdb2b37feb1f1b2327d37c8caa2d71572f51"
+  },
+  {
+   "id": "rozklad",
+   "title": "Положення про розклад навчальних занять",
+   "code": "02.07.59:2026, ред. 3",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/06/02.07.59_2023-polozhennia-pro-rozklad-navchalnykh-zaniat-u-prykarpatskomu-natsionalnomu-universyteti-imeni-vasylia-stefanyka.pdf",
+   "pages": 12,
+   "sha256": "057edb039747cc999a7d5f71d4ae0f289c8256b64b74bbb0099b39250fe1122e"
+  },
+  {
+   "id": "monitorynh",
+   "title": "Положення про моніторинг якості рівня знань здобувачів вищої освіти",
+   "code": "02.07.53:2026, ред. 3",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/09/polozhennia-pro-monitorynh-iakosti-rivnia-znan-zdobuvachiv-vyshchoi-osvity.pdf",
+   "pages": 11,
+   "sha256": "af0c1a6a5d02c5a4179106bccd90163aeeaa5e2c499b65ee4aee07e68b7c0b18"
+  },
+  {
+   "id": "praktyka",
+   "title": "Положення про організацію та проведення практики",
+   "code": "02-07.50:2026, ред. 4",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/05/02-07.50_2023-polozhennia-pro-orhanizatsiiu-ta-provedennia-praktyky-u-prykarpatskomu-natsionalnomu-universyteti-imeni-vasylia-stefanyka-.pdf",
+   "pages": 11,
+   "sha256": "a1089a06289a00602b6646d5083195c8fe95dec923f9a2d3731cee7382e309d7"
+  },
+  {
+   "id": "zhurnal",
+   "title": "Положення про електронний журнал обліку навчальної роботи здобувачів освіти",
+   "code": "02.07.66:2026, ред. 3",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2024/07/02.07.662024-polozhennia-pro-elektronnyj-zhurnal-obliku-navchalnoi-roboty-zdobuvachiv-osvity.pdf",
+   "pages": 9,
+   "sha256": "997c5aa77baf8db28f73c8b24991e15cd31e5c52e961d10ea1d0880d07684878"
+  },
+  {
+   "id": "vybir",
+   "title": "Положення про порядок реалізації здобувачами вищої освіти права на вільний вибір освітніх компонент",
+   "code": "02-07.33:2026, ред. 6",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/05/02-07.33_2022-polozhennia-pro-realizatsiiu-prava-zdobuvachiv-vyshchoi-osvity-na-vilnyj-vybir-osvitnikh-komponent.pdf",
+   "pages": 7,
+   "sha256": "2816b3515f56a8ab18308133b82f896170186bf2198618dcc8df9a524871b93a"
+  },
+  {
+   "id": "ind_grafik",
+   "title": "Положення про порядок навчання здобувачів вищої освіти за індивідуальним графіком",
+   "code": "02-07.44:2026, ред. 4",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/05/02-07.44_2022-polozhennia-pro-poriadok-navchannia-zdobuvachiv-vyshchoi-osvity-za-indyvidualnym-hrafikom-u-prykarpatskomu-natsionalnomu-universyteti-imeni-vasylia-stefanyka.pdf",
+   "pages": 7,
+   "sha256": "18764402fafd5c4a0891cbc23b477307e1af6242a1024ba3b5de345f85e3261e"
+  },
+  {
+   "id": "mobilnist",
+   "title": "Положення про академічну мобільність учасників освітнього процесу",
+   "code": "02-07.46:2026, ред. 4",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/05/02-07.46_2023-polozhennia-pro-akademichnu-mobilnist-uchasnykiv-osvitnoho-protsesu-prykarpatskoho-natsionalnoho-universytetu-imeni-vasylia-stefanyka-.pdf",
+   "pages": 13,
+   "sha256": "0e4461022c764c62f2737ceb4980f2e684c5835323dce53a602b5037e9edb4de"
+  },
+  {
+   "id": "neformalna",
+   "title": "Положення про визнання результатів навчання, здобутих шляхом неформальної освіти",
+   "code": "02-07.33:2026, ред. 4",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/05/02-07.33_2022-polozhennia-pro-vyznannia-rezultativ-navchannia-zdobutykh-shliakhom-neformalnoi-osvity-v-prykarpatskomu-natsionalnomu-universyteti-imeni-vasylia-stefanyka.pdf",
+   "pages": 12,
+   "sha256": "0d5321020209da08abd16d2a1e820aa0558d874e6ca349935997cb0b86e95c81"
+  },
+  {
+   "id": "akad_riznytsia",
+   "title": "Положення про порядок визнання результатів навчання та ліквідації академічної різниці",
+   "code": "02.07.54:2026, ред. 7",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/06/02.07.54_2023-polozhennia-pro-poriadok-vyznannia-rezultativ-navchannia-ta-likvidatsii-akademichnoi-riznytsi.pdf",
+   "pages": 11,
+   "sha256": "246647fdbe7e6ff3424ecaa3ca15d932e096dfb63f8c10c588d1e46c685cfebf"
+  },
+  {
+   "id": "buling",
+   "title": "Положення про організацію запобігання та протидії насильству (в тому числі булінгу) в освітній громаді",
+   "code": "16-03/3:2023, ред. 2",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/09/polozhennia-pro-orhanizatsiiu-zapobihannia-ta-protydii-nasylstvu-v-tomu-chysli-bulinhu-v-osvitnij-hromadi-universytetu.pdf",
+   "pages": 9,
+   "sha256": "564be2d98816081e33869b1585c8c95a36a89d25c92107630d690b454a2b8538"
+  },
+  {
+   "id": "ombudsman",
+   "title": "Положення про Уповноваженого з прав студентів – Студентського омбудсмена",
+   "code": "03.06-05.22-01:2026, ред. 2",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2025/12/polozhennia-pro-upovnovazhenoho-z-prav-studentiv-studentskoho-ombudsmena.pdf",
+   "pages": 9,
+   "sha256": "590e0fd059c72a8f7097765a7c03176f68e508cdd06dc667fa706f3a07a03782"
+  },
+  {
+   "id": "hurtozhytky",
+   "title": "Положення про поселення студентів університету в гуртожитки на 2026/2027 навчальний рік",
+   "code": "25-01.1:2026, ред. 1",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2026/09/polozhennia-pro-poselennia-studentiv-universytetu-v-hurtozhytky.pdf",
+   "pages": 16,
+   "sha256": "43236f4abf195e25db5eed8226429669bb0b53a4845d946f971e6186bc315505"
+  },
+  {
+   "id": "stypendii",
+   "title": "Положення про призначення і виплату академічних та соціальних стипендій",
+   "code": "02.07.61:2026, ред. 7",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/09/02.07.61-2023-polozhennia-pro-pryznachennia-i-vyplatu-akademichnykh-ta-sotsialnykh-stypendij.pdf",
+   "pages": 42,
+   "sha256": "a1a15b0ad52edb7ff4fe36f043d98905c3608ece9319e1c6f2ff64c05fb0c843"
+  },
+  {
+   "id": "stypkomisiia",
+   "title": "Положення про стипендіальну комісію",
+   "code": "02.07.60:2026, ред. 4",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/09/02.07.60-2023-polozhennia-pro-stypendialnu-komisiiu.pdf",
+   "pages": 8,
+   "sha256": "d7e3012f7b2022ef5e0549c8ae609c663d70ee015eb89d8a6b228d6ce43bbca1"
+  },
+  {
+   "id": "vynahorody",
+   "title": "Положення про винагороди студентам",
+   "code": "03.06-05.16:2022, ред. 2",
+   "url": "https://efund.cnu.edu.ua/wp-content/uploads/sites/24/2023/05/03.06-05.16_2022-polozhennia-pro-vynahorody-studentam-prykarpatskoho-natsionalnoho-universytetu-imeni-vasylia-stefanyka.pdf",
+   "pages": 4,
+   "sha256": "88ee466eabaabfbba6c96ce3c68d01714586e538c38c50fd72d6a2384c4574e3"
+  }
+ ]
+}

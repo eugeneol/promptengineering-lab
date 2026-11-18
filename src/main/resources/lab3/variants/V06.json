@@ -1,0 +1,218 @@
+{
+  "variant": 6,
+  "title": "Вибіркові чи розклад",
+  "pair": [
+    "electives",
+    "schedule"
+  ],
+  "pairNote": "Накладка, час чи аудиторія вибіркової — schedule; бажання записатися, змінити чи покинути саму вибіркову — electives.",
+  "requests": [
+    {
+      "id": "V06-01",
+      "text": "Де переглянути каталог вибіркових дисциплін на наступний рік?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": ""
+    },
+    {
+      "id": "V06-02",
+      "text": "Моя вибіркова «Мобільна розробка» в розкладі стоїть одночасно з обов'язковою парою з алгоритмів. Що робити?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "electives",
+      "why": "Межа пари: накладка в розкладі — schedule; виправити може диспетчер/деканат."
+    },
+    {
+      "id": "V06-03",
+      "text": "Вибіркову «Кібербезпека» перенесли з понеділка на суботу, а в суботу я працюю. Можна перейти на іншу вибіркову?",
+      "category": "electives",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": "Межа пари: розклад — причина, прохання — перейти на іншу вибіркову (electives); переписати може лише деканат."
+    },
+    {
+      "id": "V06-04",
+      "text": "Чи можна взяти академвідпустку посеред семестру і що тоді буде з моїми заліками?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": "Академвідпустка — study; питання довідкове → low."
+    },
+    {
+      "id": "V06-05",
+      "text": "Які документи потрібні для поселення в гуртожиток першокурснику?",
+      "category": "dorm",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V06-06",
+      "text": "Пароль від Classroom скинули, а новий не приходить на пошту.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V06-07",
+      "text": "Чи отримують стипендію студенти, які навчаються за ІГН?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": ""
+    },
+    {
+      "id": "V06-08",
+      "text": "Потрібна довідка про навчання для посольства англійською мовою.",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V06-09",
+      "text": "Як мені отримати бали за участь в олімпіаді — їх зараховують у предмет?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V06-10",
+      "text": "Хто складає розклад і кому писати, якщо в групи шість пар в один день?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V06-11",
+      "text": "Добрий день! Скажіть, чи можна перескласти вибіркову «Веб-дизайн», і ще: у нас з цього тижня змінився розклад, а в Classroom про це нічого.",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "two_topics",
+      "trap_field": "category",
+      "distractor": "electives",
+      "why": "Дві теми: питання — чи можна перескласти (study, довідкове); зміна розкладу — лише повідомлення, без прохання."
+    },
+    {
+      "id": "V06-12",
+      "text": "Це не стосується вибіркових. У мене питання: чому в розкладі в нас англійська о 8:00 у суботу?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "negation",
+      "trap_field": "category",
+      "distractor": "electives",
+      "why": "Заперечення: вибіркові виключено самим студентом; питання про розклад (schedule), пояснити чи виправити може лише людина."
+    },
+    {
+      "id": "V06-13",
+      "text": "Чи є біля університету недорога їдальня, де можна пообідати між парами?",
+      "category": "other",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "off_topic",
+      "trap_field": "category",
+      "distractor": "schedule",
+      "why": "Поза темою: «між парами» тягне до розкладу, але питання про їдальню — other / low."
+    },
+    {
+      "id": "V06-14",
+      "text": "Слухайте, я записався на вибіркову по фотографії, а мене в списках групи нема, то я шо, не записаний чи як?",
+      "category": "electives",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "surzhyk",
+      "trap_field": "category",
+      "distractor": "access",
+      "why": "Суржик: суть — статус запису на вибіркову (electives); перевірити списки може лише людина."
+    },
+    {
+      "id": "V06-15",
+      "text": "Я куратор групи 241. Студентка просить індивідуальний графік через догляд за дитиною — яку процедуру їй порадити?",
+      "category": "schedule",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "third_party",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Пише куратор: питання про процедуру ІГН (schedule), довідкове — бот може відповісти; персональних даних не запитують."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V06-E1",
+      "text": "В яку аудиторію перенесли вибіркову «Аналіз даних» на цьому тижні?",
+      "category": "schedule",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "electives",
+        "schedule"
+      ],
+      "note": "аудиторія і час вибіркової — schedule, довідка"
+    },
+    {
+      "id": "V06-E2",
+      "text": "Записався не на ту вибіркову — прошу перевести мене на «Робототехніку».",
+      "category": "electives",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "electives",
+        "schedule"
+      ],
+      "note": "зміна запису — electives, рішення деканату"
+    },
+    {
+      "id": "V06-E3",
+      "text": "Де подивитися, коли консультація перед іспитом з алгоритмів?",
+      "category": "schedule",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": null,
+      "note": "будь-який розклад (і консультацій) — schedule"
+    }
+  ],
+  "hardestFallback": [
+    "V06-02",
+    "V06-03",
+    "V06-11",
+    "V06-12",
+    "V06-14"
+  ]
+}

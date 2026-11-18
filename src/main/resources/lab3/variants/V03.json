@@ -1,0 +1,218 @@
+{
+  "variant": 3,
+  "title": "Стипендія чи навчання",
+  "pair": [
+    "scholarship",
+    "study"
+  ],
+  "pairNote": "Оцінка, через яку «вилетів» зі стипендії, — study, якщо студент хоче її оскаржити, і scholarship, якщо питає про рейтинг чи виплату.",
+  "requests": [
+    {
+      "id": "V03-01",
+      "text": "Коли буде виплата стипендії за листопад?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V03-02",
+      "text": "Я перездала іспит з економіки на 85. Чи врахують цю оцінку в рейтинг для стипендії?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Межа пари: оцінка — контекст, питання — про рейтинг для стипендії (scholarship), довідкове."
+    },
+    {
+      "id": "V03-03",
+      "text": "Через перездачу мене викинуло з рейтингу на стипендію. Хочу оскаржити оцінку з перездачі, бо вважаю її заниженою.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "scholarship",
+      "why": "Межа пари: стипендія — наслідок, прохання — оскаржити оцінку (study); апеляція — рішення людини."
+    },
+    {
+      "id": "V03-04",
+      "text": "Як записатися на вибіркові, якщо я був в академвідпустці і пропустив запис?",
+      "category": "electives",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V03-05",
+      "text": "У гуртожитку №2 не працює пральня вже місяць. Куди звертатися?",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V03-06",
+      "text": "Пари з комп'ютерних мереж у вівторок стоять в аудиторії, якої не існує (корпус 5, ауд. 512). Де нас шукати?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V03-07",
+      "text": "Як увімкнути двофакторний вхід у кабінет студента?",
+      "category": "access",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V03-08",
+      "text": "Як отримати соціальну стипендію? Я з багатодітної сім'ї.",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V03-09",
+      "text": "Чи можна повторно вивчати дисципліну платно, якщо я двічі не склав?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "scholarship",
+      "why": "Довідкове «чи можна» — бот закриває відповіддю, хоча студент згадує свою ситуацію → low."
+    },
+    {
+      "id": "V03-10",
+      "text": "Мені потрібна довідка для військкомату. Як замовити?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V03-11",
+      "text": "Дякую стипендіальній комісії за чудовий подарунок — мінус 200 гривень без жодних пояснень. Можна хоч дізнатися, чому?",
+      "category": "scholarship",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "sarcasm",
+      "trap_field": "category",
+      "distractor": "other",
+      "why": "Сарказм: «дякую» і «подарунок» — це скарга на зменшену стипендію (scholarship); пояснити конкретне нарахування може лише людина."
+    },
+    {
+      "id": "V03-12",
+      "text": "Питання не про стипендію і не про рейтинг! Я просто хочу знати, коли можна перескласти фізику.",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "negation",
+      "trap_field": "category",
+      "distractor": "scholarship",
+      "why": "Заперечення: слова «стипендія» і «рейтинг» є, але саме вони виключені; питання — коли перездача (study), довідкове → low, як і інші «коли перездача»."
+    },
+    {
+      "id": "V03-13",
+      "text": "Доброго дня, я мама студента 2 курсу Петренка. Скажіть, будь ласка, чи отримує мій син стипендію цього семестру? Він сам не каже.",
+      "category": "scholarship",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "third_party",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Пише не студент: тема — стипендія, але це персональні дані іншої людини → бот не відповідає сам, needs_human = true."
+    },
+    {
+      "id": "V03-14",
+      "text": "А хто сьогодні грає у футбол на стадіоні університету? Можна прийти подивитись?",
+      "category": "other",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "off_topic",
+      "trap_field": "category",
+      "distractor": "schedule",
+      "why": "Поза темою: other / low / бот відповідає сам."
+    },
+    {
+      "id": "V03-15",
+      "text": "Добрий вечір. Пишу, бо вже не знаю куди. Почалось усе з того, що в першому семестрі я хворіла, потім було переведення з контракту на бюджет... ну не важливо. Коротше, зараз у мене нормальні оцінки, всі здала, але в списку на стипендію мене нема, а в одногрупниці з меншим балом є. Ще й у гуртожитку сусідка постійно гучно слухає музику, але це окрема історія. Підкажіть, будь ласка, хто може перевірити мій рейтинговий бал?",
+      "category": "scholarship",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "rambling",
+      "trap_field": "category",
+      "distractor": "dorm",
+      "why": "Довге й плутане: відступи про хворобу й гуртожиток; суть — можлива помилка в стипендіальному списку (scholarship), перевірити може лише людина."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V03-E1",
+      "text": "Як подати апеляцію на оцінку за практику? Через неї я можу не пройти на академічну стипендію.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "scholarship",
+        "study"
+      ],
+      "note": "прохання — апеляція на оцінку (study), стипендія — наслідок"
+    },
+    {
+      "id": "V03-E2",
+      "text": "Як рахується рейтинговий бал для стипендії — чи додають бали за олімпіади?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "scholarship",
+        "study"
+      ],
+      "note": "питання про рейтинг для стипендії, довідкове"
+    },
+    {
+      "id": "V03-E3",
+      "text": "Завтра останній день подачі документів на академвідпустку, а довідки від лікаря ще немає. Що робити?",
+      "category": "study",
+      "urgency": "high",
+      "needs_human": true,
+      "pair": null,
+      "note": "строк — завтра → high; потрібен виняток → людина"
+    }
+  ],
+  "hardestFallback": [
+    "V03-03",
+    "V03-11",
+    "V03-12",
+    "V03-13",
+    "V03-15"
+  ]
+}

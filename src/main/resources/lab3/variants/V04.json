@@ -1,0 +1,224 @@
+{
+  "variant": 4,
+  "title": "Гуртожиток чи інше",
+  "pair": [
+    "dorm",
+    "other"
+  ],
+  "pairNote": "Довідка про проживання й оплата гуртожитку — dorm; довідка з місця навчання, оплата навчання і скарги на працівників — other, навіть якщо студент живе в гуртожитку.",
+  "requests": [
+    {
+      "id": "V04-01",
+      "text": "Як оплатити проживання в гуртожитку онлайн? Потрібні реквізити.",
+      "category": "dorm",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V04-02",
+      "text": "Мені потрібна довідка про те, що я проживаю в гуртожитку, для ЦНАПу. Де її взяти?",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": "Межа пари: довідка про проживання в гуртожитку — dorm; запит документа → needs_human = true."
+    },
+    {
+      "id": "V04-03",
+      "text": "Чи є в гуртожитку кімнати для сімейних студентів?",
+      "category": "dorm",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V04-04",
+      "text": "Як стати на військовий облік у вашому університеті? Я щойно вступив.",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Постановку на облік робить працівник (normal, людина); але «як стати» бот частково закриває довідкою, тому допустимо й low.",
+      "alt": {
+        "urgency": [
+          "normal",
+          "low"
+        ]
+      }
+    },
+    {
+      "id": "V04-05",
+      "text": "Здрастуйте. Не відкривається Classroom з телефону, з ноутбука все ок.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V04-06",
+      "text": "Хочу перездати залік з фізвиховання, бо пропустив через травму. Що для цього треба?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": "«Що для цього треба» — довідкове питання, бот закриває сам, хоча студент згадує травму → low."
+    },
+    {
+      "id": "V04-07",
+      "text": "Коли закінчується запис на вибіркові для третього курсу?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": ""
+    },
+    {
+      "id": "V04-08",
+      "text": "Чи можна отримувати академічну стипендію, якщо я навчаюсь на контракті?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V04-09",
+      "text": "У нас в групі в середу накладаються лабораторні з двох предметів. Хто це має виправити?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V04-10",
+      "text": "Я виселився з гуртожитку, а мені далі нараховують плату. Як це припинити?",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": "Межа пари: оплата проживання — dorm; припинити нарахування може лише людина."
+    },
+    {
+      "id": "V04-11",
+      "text": "Добрий дєнь, мені сказали шо в общазі нема мєст, а я вже приїхав з вещами і стою на вокзалі, куди мені тепер?",
+      "category": "dorm",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "surzhyk",
+      "trap_field": "category",
+      "distractor": "other",
+      "why": "Суржик: «общага» — гуртожиток (dorm); студент уже приїхав і не має де ночувати сьогодні → high, поселення — рішення людини."
+    },
+    {
+      "id": "V04-12",
+      "text": "Скаржуся на коменданта гуртожитку №3: кричить на студентів і без дозволу заходить у кімнати, поки нас немає.",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "complaint",
+      "trap_field": "category",
+      "distractor": "dorm",
+      "why": "Скарга на працівника — other (правило в системному промпті), хоча йдеться про гуртожиток; чутлива ситуація → людина."
+    },
+    {
+      "id": "V04-13",
+      "text": "Я завтра заселяюсь у гуртожиток, і мені для поселення потрібна довідка з місця навчання — як її швидко отримати?",
+      "category": "other",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "two_topics",
+      "trap_field": "category",
+      "distractor": "dorm",
+      "why": "Дві теми: гуртожиток — контекст, прохання — довідка з місця навчання (other), строк — завтра (high)."
+    },
+    {
+      "id": "V04-14",
+      "text": "Доброго дня. Скажіть, будь ласка, до кого звернутися щодо оплати гуртожитку — мені прийшло повідомлення, що якщо не оплачу до 12:00 завтра, мене виселять.",
+      "category": "dorm",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "hidden_urgency",
+      "trap_field": "urgency",
+      "distractor": "other",
+      "why": "Прихована терміновість: ввічливий тон, але виселення завтра → high."
+    },
+    {
+      "id": "V04-15",
+      "text": "Срочно напишіть мені в телеграм!!!!!!",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": "urgent_no_substance",
+      "trap_field": "urgency",
+      "distractor": "access",
+      "why": "«Срочно» без суті: фактів для high немає, суть незрозуміла → normal; бот уточнює, що сталося (needs_human = false)."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V04-E1",
+      "text": "Потрібна довідка для реєстрації місця проживання за адресою гуртожитку.",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "dorm",
+        "other"
+      ],
+      "note": "довідка про проживання — dorm"
+    },
+    {
+      "id": "V04-E2",
+      "text": "Де оплатити навчання за контрактом — так само, як за гуртожиток, через банк?",
+      "category": "other",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "dorm",
+        "other"
+      ],
+      "note": "оплата навчання — other, гуртожиток лише згадано"
+    },
+    {
+      "id": "V04-E3",
+      "text": "Таргани в кімнаті 305, вже двічі писали коменданту.",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": null,
+      "note": "побутова проблема в гуртожитку — потрібна людина"
+    }
+  ],
+  "hardestFallback": [
+    "V04-02",
+    "V04-11",
+    "V04-12",
+    "V04-13",
+    "V04-14"
+  ]
+}

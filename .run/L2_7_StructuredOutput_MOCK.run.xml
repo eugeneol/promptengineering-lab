@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Лаба 2 · 7 Structured output (MOCK)" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ua.knu.promptlab.lab2.Step7StructuredOutput" />
+    <module name="prompt-lab" />
+    <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8" />
+    <envs>
+      <env name="LAB_MOCK" value="1" />
+      <env name="LAB_PROVIDER" value="gemini" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

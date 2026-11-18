@@ -1,0 +1,224 @@
+{
+  "variant": 1,
+  "title": "Навчання чи вибіркові",
+  "pair": [
+    "study",
+    "electives"
+  ],
+  "pairNote": "Оцінка чи перездача з вибіркової — це study (оцінювання), а запис, зміна, відмова від вибіркової — electives.",
+  "requests": [
+    {
+      "id": "V01-01",
+      "text": "Добрий день! Підкажіть, будь ласка, до якого числа можна записатися на вибіркові дисципліни на весняний семестр?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": ""
+    },
+    {
+      "id": "V01-02",
+      "text": "Я не склав іспит з дискретної математики. Коли і як можна перескласти?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": "Перездача — study; бот закриває довідкою (коли й як), хоча студент згадує свою ситуацію → low."
+    },
+    {
+      "id": "V01-03",
+      "text": "Отримав незадовільну оцінку з вибіркової «Основи UX-дизайну». Як мені її перескласти — так само, як звичайний предмет?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "electives",
+      "why": "Межа пари: «вибіркова» — лише контекст, питання — про перездачу (study); відповідь довідкова → low."
+    },
+    {
+      "id": "V01-04",
+      "text": "Чи можна мені поселитися в гуртожиток посеред семестру? Зараз винаймаю квартиру, але господар попросив з'їхати до кінця місяця.",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V01-05",
+      "text": "Не можу зайти в корпоративну пошту, пише, що пароль неправильний, хоча я його не міняв.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": "Щось не працює → normal; пароль студент відновлює сам (false), але «не міняв» може означати блокування — тому допустимо й true.",
+      "alt": {
+        "needs_human": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "V01-06",
+      "text": "Доброго дня. Мені не нарахували стипендію за жовтень, хоча в рейтингу я в списку. До кого звертатися?",
+      "category": "scholarship",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V01-07",
+      "text": "Мені потрібна довідка з місця навчання для оформлення субсидії батькам. Як її отримати?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V01-08",
+      "text": "У розкладі на четвер дві пари одночасно — ООП і англійська. На яку йти?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V01-09",
+      "text": "Хочу змінити вибіркову з «Психології» на «Веб-розробку», бо записався не туди. Ще можна?",
+      "category": "electives",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Межа пари: зміна запису на вибіркову — electives; переписати студента може лише деканат → normal, needs_human = true."
+    },
+    {
+      "id": "V01-10",
+      "text": "Підкажіть, будь ласка, яка мінімальна кількість студентів має бути, щоб вибіркова дисципліна відкрилась?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V01-11",
+      "text": "О, чудово, третій день «технічні роботи» в електронному журналі. Дуже зручно, особливо коли завтра треба подивитися, чи мене допустили до заліку 🙃",
+      "category": "access",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "sarcasm",
+      "trap_field": "category",
+      "distractor": "study",
+      "why": "Сарказм: «чудово» і «зручно» означають скаргу. Суть — система недоступна (access), строк — завтра (high); полагодити систему чи підтвердити допуск може лише людина."
+    },
+    {
+      "id": "V01-12",
+      "text": "Добрий день. Я перевівся з іншого факультету, і мені треба закрити академрізницю з двох предметів — підкажіть, кому подавати заяву і в які строки. Заодно: чи зберігається стипендія після переведення?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "two_topics",
+      "trap_field": "category",
+      "distractor": "scholarship",
+      "why": "Дві теми: головне питання — академрізниця (study), стипендія згадана «заодно». Обидва питання довідкові (кому, коли, чи зберігається) → low, бот відповідає сам."
+    },
+    {
+      "id": "V01-13",
+      "text": "Шо робить якшо мене не пускають на екзамен бо кажуть шо в мене не здана лаба по базам даних, а я її здавав, просто викладач не поставив в журнал. Екзамен завтра",
+      "category": "study",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "surzhyk",
+      "trap_field": "category",
+      "distractor": "access",
+      "why": "Суржик і слово «журнал» тягнуть до access, але проблема — допуск до іспиту і невиставлена оцінка (study); іспит завтра → high; виправити може лише викладач."
+    },
+    {
+      "id": "V01-14",
+      "text": "Скажіть, а у вас в університеті є секція з настільного тенісу? Хочу записатися",
+      "category": "other",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "off_topic",
+      "trap_field": "category",
+      "distractor": "electives",
+      "why": "Поза темою: «записатися» схоже на вибіркові, але секція — не дисципліна. other / low / бот відповідає сам."
+    },
+    {
+      "id": "V01-15",
+      "text": "ТЕРМІНОВО!!! Відповідайте будь ласка зараз це дуже важливо!!!",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": "urgent_no_substance",
+      "trap_field": "urgency",
+      "distractor": "study",
+      "why": "«Терміново» без суті: urgency визначаємо за фактами, а суть незрозуміла → normal; бот спершу уточнює питання (needs_human = false)."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V01-E1",
+      "text": "Викладач вибіркової «Етика ШІ» досі не виставив мені оцінку за модуль, хоча я все здала вчасно.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "study",
+        "electives"
+      ],
+      "note": "оцінка з вибіркової — це оцінювання, тобто study"
+    },
+    {
+      "id": "V01-E2",
+      "text": "Чи можна записатися одразу на дві вибіркові в одному семестрі, якщо обидві цікаві?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "study",
+        "electives"
+      ],
+      "note": "запис на вибіркові, лише інформація"
+    },
+    {
+      "id": "V01-E3",
+      "text": "Терміново!!! Підкажіть, де подивитися розклад консультацій на наступний місяць",
+      "category": "schedule",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": null,
+      "note": "будь-який розклад — schedule; «терміново» без строку — urgency за фактами"
+    }
+  ],
+  "hardestFallback": [
+    "V01-03",
+    "V01-11",
+    "V01-12",
+    "V01-13",
+    "V01-15"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "variant": 8,
+  "title": "Інше чи доступ",
+  "pair": [
+    "other",
+    "access"
+  ],
+  "pairNote": "Довідка чи документ — other, навіть якщо їх замовляють через кабінет студента; але якщо сам кабінет не працює — access.",
+  "requests": [
+    {
+      "id": "V08-01",
+      "text": "Як отримати студентський квиток замість загубленого?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "access",
+      "why": ""
+    },
+    {
+      "id": "V08-02",
+      "text": "Замовляю довідку в кабінеті студента, а кнопка «Сформувати» неактивна вже другий день.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": "Межа пари: довідка — мета, а проблема — збій кабінету студента (access); полагодити може лише людина."
+    },
+    {
+      "id": "V08-03",
+      "text": "Чи можна закрити академборг з минулого семестру, якщо я вже на наступному курсі?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": "Академборг — study; питання довідкове → low."
+    },
+    {
+      "id": "V08-04",
+      "text": "Чи можна змінити вибіркову, якщо викладач пішов з університету?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Загальне питання «чи можна» — довідка (low, бот), як і інші «чи можна» про вибіркові."
+    },
+    {
+      "id": "V08-05",
+      "text": "Де дізнатися номер аудиторії на наступний тиждень? У розкладі для нашої групи порожньо.",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "access",
+      "why": ""
+    },
+    {
+      "id": "V08-06",
+      "text": "Скільки складає академічна стипендія для відмінників цього семестру?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V08-07",
+      "text": "Комендант вимагає флюорографію для поселення. Де її зробити безкоштовно?",
+      "category": "other",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "dorm",
+      "why": "Питання — де зробити медогляд (other); поселення лише причина. Допустимо й dorm.",
+      "alt": {
+        "category": [
+          "other",
+          "dorm"
+        ]
+      }
+    },
+    {
+      "id": "V08-08",
+      "text": "Я хочу перевестися на іншу спеціальність всередині факультету. Що для цього потрібно?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V08-09",
+      "text": "Потрібна довідка для соцзахисту про те, що я навчаюсь на денній формі. Скільки її чекати?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "scholarship",
+      "why": "Запит документа → other, needs_human = true."
+    },
+    {
+      "id": "V08-10",
+      "text": "Мене випадково видалили з курсу з баз даних у Classroom.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V08-11",
+      "text": "Мені соромно це писати, але я не можу заплатити за контракт цього семестру, батько втратив роботу. Мене відрахують?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "emotional",
+      "trap_field": "needs_human",
+      "distractor": "study",
+      "why": "Емоційне: загроза відрахування за несплату контракту — other (правило в системному промпті); стрес → normal і людина, а не довідка."
+    },
+    {
+      "id": "V08-12",
+      "text": "Hello, I am an exchange student from Poland. I cannot log in to the university email, it says my account is not activated.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "foreign_language",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Інша мова: суть — неактивований акаунт (access); активувати може лише адміністратор → needs_human = true."
+    },
+    {
+      "id": "V08-13",
+      "text": "Алло!!! Чому ніхто не відповідає??? Це вже третє повідомлення!!!",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": "urgent_no_substance",
+      "trap_field": "urgency",
+      "distractor": "access",
+      "why": "Емоції без суті: фактів для high немає, суть незрозуміла → normal; бот спершу уточнює питання."
+    },
+    {
+      "id": "V08-14",
+      "text": "Скаржуся на роботу методиста деканату: третій тиждень не можу отримати довідку, яку замовила в кабінеті, кажуть «чекайте».",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "complaint",
+      "trap_field": "category",
+      "distractor": "access",
+      "why": "Скарга на працівника — other; кабінет працює, затримується видача довідки; чутлива ситуація → людина."
+    },
+    {
+      "id": "V08-15",
+      "text": "Пошта працює нормально, справа не в ній. Просто мені не приходять сповіщення з Classroom про нові завдання, і я пропускаю дедлайни.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": "negation",
+      "trap_field": "category",
+      "distractor": "other",
+      "why": "Заперечення: пошту виключено, проблема — сповіщення Classroom (access); бот підкаже налаштування."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V08-E1",
+      "text": "Через кабінет студента не замовлю — мені потрібна довідка з печаткою для візи. Як отримати паперову?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "other",
+        "access"
+      ],
+      "note": "довідка — other, кабінет — лише канал"
+    },
+    {
+      "id": "V08-E2",
+      "text": "Кабінет студента не пускає після зміни прізвища — пише, що користувача не знайдено.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "other",
+        "access"
+      ],
+      "note": "не пускає в систему — access, виправити дані може лише людина"
+    },
+    {
+      "id": "V08-E3",
+      "text": "Я дуже переживаю, що не встигаю і мене відрахують. З чого почати?",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": null,
+      "note": "стрес і страх відрахування — normal і людина"
+    }
+  ],
+  "hardestFallback": [
+    "V08-02",
+    "V08-11",
+    "V08-12",
+    "V08-13",
+    "V08-15"
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "variant": 7,
+  "title": "Стипендія чи гуртожиток",
+  "pair": [
+    "scholarship",
+    "dorm"
+  ],
+  "pairNote": "Оплата, пільги й повернення коштів за проживання — dorm; нарахування й документи на стипендію — scholarship.",
+  "requests": [
+    {
+      "id": "V07-01",
+      "text": "Чи можна оплачувати гуртожиток частинами, помісячно?",
+      "category": "dorm",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "scholarship",
+      "why": ""
+    },
+    {
+      "id": "V07-02",
+      "text": "Чи можна, щоб плату за гуртожиток автоматично списували зі стипендії?",
+      "category": "dorm",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "scholarship",
+      "why": "Межа пари: спосіб оплати проживання — dorm; стипендія — лише джерело грошей. Довідкове «чи можна» → бот; але налаштувати списання може лише бухгалтерія, тому допустимо й true.",
+      "alt": {
+        "needs_human": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "V07-03",
+      "text": "Я сирота і живу в гуртожитку. Мені належить соціальна стипендія — куди подати документи?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "dorm",
+      "why": "Межа пари: гуртожиток — контекст, питання — документи на соціальну стипендію (scholarship), довідкове."
+    },
+    {
+      "id": "V07-04",
+      "text": "Практику я захистив, а в заліковій відомості стоїть «не з'явився». Хто це виправить?",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "access",
+      "why": "Помилка в оцінюванні (study); виправити може лише людина; строку немає → normal."
+    },
+    {
+      "id": "V07-05",
+      "text": "Як дізнатися свій логін від електронного журналу?",
+      "category": "access",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V07-06",
+      "text": "Чи можна обрати вибіркову з магістерського каталогу, якщо я на 4 курсі?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V07-07",
+      "text": "Розклад на сайті і в Classroom різний. Якому вірити?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "access",
+      "why": "Щось не працює → normal; розбіжність виправляє людина (true), але бот може порадити, яке джерело офіційне, тому допустимо й false.",
+      "alt": {
+        "needs_human": [
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "id": "V07-08",
+      "text": "Потрібна копія наказу про зарахування. Куди звертатися?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V07-09",
+      "text": "Не нарахували стипендію за вересень і жовтень. Що робити?",
+      "category": "scholarship",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V07-10",
+      "text": "Можна в гуртожитку поміняти кімнату? Сусід курить у кімнаті.",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V07-11",
+      "text": "Привіт. Питання дрібне: у мене завтра останній день, щоб подати документи на соціальну стипендію, а довідки про доходи ще немає. Можна донести пізніше?",
+      "category": "scholarship",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "hidden_urgency",
+      "trap_field": "urgency",
+      "distractor": "dorm",
+      "why": "Прихована терміновість: «питання дрібне», але строк завтра → high; виняток може дозволити лише людина."
+    },
+    {
+      "id": "V07-12",
+      "text": "Це не про гуртожиток, хоч я там і живу. Мені не нарахували підвищену стипендію, хоча середній бал 95.",
+      "category": "scholarship",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "negation",
+      "trap_field": "category",
+      "distractor": "dorm",
+      "why": "Заперечення: гуртожиток виключено самим студентом; суть — ненараховане підвищення стипендії (scholarship), перевірити може лише людина."
+    },
+    {
+      "id": "V07-13",
+      "text": "Доброго дня! Я на другому курсі, на початку року я жила вдома, але потім переїхала в гуртожиток, бо їздити далеко, і там з мене взяли оплату одразу за пів року. А тепер мені сказали, що оскільки я отримую соціальну стипендію, то маю пільгу на проживання. Хочу повернути переплату за гуртожиток — як це зробити?",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "rambling",
+      "trap_field": "category",
+      "distractor": "scholarship",
+      "why": "Довге й плутане: соціальна стипендія — підстава пільги, а прохання — повернути переплату за проживання (dorm)."
+    },
+    {
+      "id": "V07-14",
+      "text": "Ну звісно, найкраще місце для гуртожитку — без гарячої води весь листопад. Дякую, дуже освіжає.",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "sarcasm",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Сарказм без прямого прохання: «дякую» — це скарга на побутову проблему (dorm), полагодити може лише людина → needs_human = true."
+    },
+    {
+      "id": "V07-15",
+      "text": "Я отримую стипендію і хочу знати: чи можна мені відвідувати пари з англійської з іншою групою, бо в моїй групі вона накладається з роботою?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "misleading_keyword",
+      "trap_field": "category",
+      "distractor": "scholarship",
+      "why": "Оманливе слово «стипендія»: вона ні до чого; питання — ходити на пари з іншою групою (schedule), дозвіл дає людина."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V07-E1",
+      "text": "Мені повернули гроші за гуртожиток на картку, куди приходить стипендія, і тепер я не розумію, що з них що. Де подивитися розрахунок за проживання?",
+      "category": "dorm",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "scholarship",
+        "dorm"
+      ],
+      "note": "розрахунок за проживання — dorm, стипендія — лише картка"
+    },
+    {
+      "id": "V07-E2",
+      "text": "Я переселився в інший гуртожиток. Чи треба повідомляти стипендіальну комісію, щоб виплати не зупинили?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "scholarship",
+        "dorm"
+      ],
+      "note": "виплати стипендії — scholarship, гуртожиток — контекст"
+    },
+    {
+      "id": "V07-E3",
+      "text": "Терміново потрібна інформація: які години роботи бухгалтерії?",
+      "category": "other",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": null,
+      "note": "«терміново» без строку — urgency за фактами"
+    }
+  ],
+  "hardestFallback": [
+    "V07-02",
+    "V07-11",
+    "V07-12",
+    "V07-13",
+    "V07-15"
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "variant": 2,
+  "title": "Навчання чи розклад",
+  "pair": [
+    "study",
+    "schedule"
+  ],
+  "pairNote": "Перенесення чи перезарахування конкретного заліку або іспиту — study; будь-який розклад (пар, консультацій, сесії) і ІГН — schedule.",
+  "requests": [
+    {
+      "id": "V02-01",
+      "text": "Де можна подивитися розклад на наступний тиждень?",
+      "category": "schedule",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V02-02",
+      "text": "Я хворів два тижні, маю довідку. Як мені відпрацювати пропущені лабораторні з фізики?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": "Питання «як відпрацювати» бот закриває довідкою, хоча студент згадує свою ситуацію → low."
+    },
+    {
+      "id": "V02-03",
+      "text": "Я працюю, тож хочу перейти на індивідуальний графік навчання. Які документи потрібні?",
+      "category": "schedule",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Межа пари: ІГН за визначенням — schedule. Питання «які документи» довідкове (low), бот може перелічити документи."
+    },
+    {
+      "id": "V02-04",
+      "text": "Можна перенести залік з філософії на інший день? У той день у мене співбесіда на стажування.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": "Межа пари: перенесення конкретного заліку — study, а не розклад пар; рішення за викладачем/деканатом."
+    },
+    {
+      "id": "V02-05",
+      "text": "Скільки балів треба в рейтингу, щоб отримувати підвищену стипендію?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V02-06",
+      "text": "В кімнаті 214 протікає кран у душі, вода капає вже тиждень.",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V02-07",
+      "text": "Не бачу курсу з алгоритмів у Classroom, хоча одногрупники його бачать.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V02-08",
+      "text": "Хочу записатися на вибіркову з іншого факультету. Це взагалі можливо?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V02-09",
+      "text": "Підкажіть, як отримати академічну довідку для переведення в інший університет.",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Запит документа → other і needs_human = true; але довідка потрібна для переведення (study), тому допустимі обидві категорії.",
+      "alt": {
+        "category": [
+          "other",
+          "study"
+        ]
+      }
+    },
+    {
+      "id": "V02-10",
+      "text": "Чи можна здати курсову пізніше, якщо керівник погодився?",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": "Перенесення строку курсової — рішення (normal, людина); але питання сформульоване як довідкове «чи можна», тому допустимо й low.",
+      "alt": {
+        "urgency": [
+          "normal",
+          "low"
+        ]
+      }
+    },
+    {
+      "id": "V02-11",
+      "text": "У розкладі сесії стоїть, що в мене іспит з матаналізу, але я його вже перезарахував, коли переводився. Чому він знову там?",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "misleading_keyword",
+      "trap_field": "category",
+      "distractor": "schedule",
+      "why": "Оманливе слово «розклад»: суть — перезарахування конкретного іспиту (study), розклад лише показує помилку. Виправити може деканат."
+    },
+    {
+      "id": "V02-12",
+      "text": "Добрий день. Хотіла уточнити, чи можна ще подати заяву на поселення в гуртожиток. Просто з завтрашнього дня мені ніде жити.",
+      "category": "dorm",
+      "urgency": "high",
+      "needs_human": true,
+      "trap": "hidden_urgency",
+      "trap_field": "urgency",
+      "distractor": "other",
+      "why": "Прихована терміновість: спокійний тон, але «з завтрашнього дня ніде жити» — строк 1 день → high."
+    },
+    {
+      "id": "V02-13",
+      "text": "Я вже не можу. Завалила три предмети, батьки не знають, я не розумію, як це все закрити і чи мене відрахують. Допоможіть.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "emotional",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Емоційне: тема — академборги (study); стрес і страх відрахування — normal і обов'язково людина. «Я вже не можу» може бути сигналом кризи, тому допустимо й high.",
+      "alt": {
+        "urgency": [
+          "normal",
+          "high"
+        ]
+      }
+    },
+    {
+      "id": "V02-14",
+      "text": "Dobryi den, ne mozhu zaity v Classroom z korporatyvnoi poshty, pyshe 'account disabled'. Shcho robyty?",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "translit",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Транслітом: суть — вимкнений акаунт (access); увімкнути його може лише адміністратор → needs_human = true."
+    },
+    {
+      "id": "V02-15",
+      "text": "Мені треба взяти ІГН через роботу, але спершу скажіть — якщо я буду на ІГН, мені збережуть стипендію?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": "two_topics",
+      "trap_field": "category",
+      "distractor": "schedule",
+      "why": "Дві теми: ІГН — контекст, питання — чи збережеться стипендія (scholarship); довідкове, low."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V02-E1",
+      "text": "Чи можна перенести пару з програмування з понеділка на середу для всієї групи? Викладач не проти.",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "study",
+        "schedule"
+      ],
+      "note": "перенесення пари — schedule"
+    },
+    {
+      "id": "V02-E2",
+      "text": "Мене не буде на іспиті з англійської 20 числа через операцію. Можна скласти його в інший день?",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "study",
+        "schedule"
+      ],
+      "note": "перенесення конкретного іспиту — study"
+    },
+    {
+      "id": "V02-E3",
+      "text": "Ну дуже «вчасно» оновили розклад — о 23:00 перед парами",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": false,
+      "pair": null,
+      "note": "сарказм без прохання: суть незрозуміла → normal, бот уточнює"
+    }
+  ],
+  "hardestFallback": [
+    "V02-04",
+    "V02-11",
+    "V02-12",
+    "V02-13",
+    "V02-15"
+  ]
+}

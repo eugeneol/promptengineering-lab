@@ -1,0 +1,233 @@
+{
+  "variant": 5,
+  "title": "Доступ чи навчання",
+  "pair": [
+    "access",
+    "study"
+  ],
+  "pairNote": "Система не пускає чи не працює — access; система працює, а бракує оцінки чи заліку — study.",
+  "requests": [
+    {
+      "id": "V05-01",
+      "text": "Як змінити пароль від корпоративної пошти?",
+      "category": "access",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V05-02",
+      "text": "В електронному журналі не відображається моя оцінка за модуль з ООП, хоча викладач казав, що поставив.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "access",
+      "why": "Межа пари: журнал працює, бракує оцінки — це оцінювання (study); виправити може викладач."
+    },
+    {
+      "id": "V05-03",
+      "text": "Не можу відкрити електронний журнал з телефону — пише «браузер не підтримується». Хочу подивитися оцінки.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Межа пари: проблема — доступ до системи (access); щось не працює → normal, бот підкаже інший браузер."
+    },
+    {
+      "id": "V05-04",
+      "text": "Коли перездача з вищої математики для тих, хто не з'явився на іспит?",
+      "category": "study",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "schedule",
+      "why": ""
+    },
+    {
+      "id": "V05-05",
+      "text": "Чи можна відмовитися від вибіркової після початку семестру?",
+      "category": "electives",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V05-06",
+      "text": "Я на ІГН, а викладачка з англійської вимагає ходити на всі пари. Як бути?",
+      "category": "schedule",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V05-07",
+      "text": "Скільки триває оформлення соціальної стипендії після подачі документів?",
+      "category": "scholarship",
+      "urgency": "low",
+      "needs_human": false,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V05-08",
+      "text": "Мене поселили в кімнату, де вже живуть четверо, а розрахована вона на трьох. Що робити?",
+      "category": "dorm",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "other",
+      "why": ""
+    },
+    {
+      "id": "V05-09",
+      "text": "Можна замовити копію атестата з особової справи?",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": ""
+    },
+    {
+      "id": "V05-10",
+      "text": "Не можу записатися на курс у Classroom — пише, що код курсу недійсний.",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": null,
+      "trap_field": null,
+      "distractor": "study",
+      "why": "Правильний код дає викладач (людина); але бот може порадити перевірити код і акаунт, тому допустимо й false.",
+      "alt": {
+        "needs_human": [
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "id": "V05-11",
+      "text": "У Classroom викладач написав, що моя курсова «не зарахована» без пояснень. Що робити, щоб її зарахували?",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "misleading_keyword",
+      "trap_field": "category",
+      "distractor": "access",
+      "why": "Оманливе слово «Classroom»: система працює, проблема — незарахована курсова (study)."
+    },
+    {
+      "id": "V05-12",
+      "text": "Вау, пошта знову «працює» — третій лист з довідкою від лікаря просто зник у нікуди. Мені ж не треба вчасно здати її в деканат, так?",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "sarcasm",
+      "trap_field": "category",
+      "distractor": "other",
+      "why": "Сарказм: «працює» в лапках — пошта губить листи (access); довідку треба передати іншим шляхом — потрібна людина. Строку немає → normal."
+    },
+    {
+      "id": "V05-13",
+      "text": "Я в повному розпачі: мене не допустили до сесії через борг з фізкультури, а я цілий семестр ходила. Я не сплю вже третю ніч.",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "emotional",
+      "trap_field": "needs_human",
+      "distractor": "other",
+      "why": "Емоційне: недопуск до сесії (study); стрес без строку — normal, обов'язково людина. «Не сплю третю ніч» можна прочитати як загрозу здоров'ю, тому допустимо й high.",
+      "alt": {
+        "urgency": [
+          "normal",
+          "high"
+        ]
+      }
+    },
+    {
+      "id": "V05-14",
+      "text": "Pryvit! Ne pryhodyt lyst z kodom dlia vhodu v elektronnyi zhurnal, shcho robyty?",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": false,
+      "trap": "translit",
+      "trap_field": "category",
+      "distractor": "study",
+      "why": "Транслітом: не приходить код для входу (access); бот підкаже перевірити спам і адресу — доступ студент відновлює сам."
+    },
+    {
+      "id": "V05-15",
+      "text": "Хочу поскаржитися на викладача з філософії: на парах принижує студентів і ставить оцінки «за симпатією».",
+      "category": "other",
+      "urgency": "normal",
+      "needs_human": true,
+      "trap": "complaint",
+      "trap_field": "category",
+      "distractor": "study",
+      "why": "Скарга на працівника — other (правило в системному промпті), хоча згадано оцінки; чутлива ситуація → людина."
+    }
+  ],
+  "examples": [
+    {
+      "id": "V05-E1",
+      "text": "Зайшов у кабінет студента, усе працює, але оцінка за залік з історії досі «не виставлено».",
+      "category": "study",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "access",
+        "study"
+      ],
+      "note": "система працює, бракує оцінки — study"
+    },
+    {
+      "id": "V05-E2",
+      "text": "Кабінет студента видає помилку 500 щоразу, як відкриваю розділ «Успішність».",
+      "category": "access",
+      "urgency": "normal",
+      "needs_human": true,
+      "pair": [
+        "access",
+        "study"
+      ],
+      "note": "збій системи — access, полагодити може лише людина"
+    },
+    {
+      "id": "V05-E3",
+      "text": "Як прив'язати корпоративну пошту до телефону?",
+      "category": "access",
+      "urgency": "low",
+      "needs_human": false,
+      "pair": [
+        "access",
+        "study"
+      ],
+      "note": "налаштування доступу самостійно — довідка"
+    }
+  ],
+  "hardestFallback": [
+    "V05-02",
+    "V05-11",
+    "V05-12",
+    "V05-13",
+    "V05-15"
+  ]
+}
